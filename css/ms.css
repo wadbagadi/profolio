@@ -3,6 +3,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+.ur {
+  background-attachment: fixed;
+}
 body {
   background-image: url(img/uii.jpg);
   background-size: cover;
