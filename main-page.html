@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/ms.css">
+    <link rel="stylesheet" href="css/all.css">
+    <script src="js/jq.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".hr,.hr1,.hr2,.hr3,.hr4").hide();
+            $(".nav-home").mouseenter(function () {
+                $(".hr").css({ width: "0px" })
+                $(".hr").fadeIn(1);
+                $(".hr").animate({ width: "100%" }, 300);
+
+            });
+            $(".nav-home").mouseleave(function () {
+                $(".hr").fadeOut(100);
+                $(".hr").animate({ width: "0px" }, 300)
+            });
+
+
+            $(".nav-skils").mouseenter(function () {
+                $(".h1").css({ width: "0px" })
+                $(".hr1").fadeIn(1);
+                $(".hr1").animate({ width: "100%" }, 300);
+
+            });
+            $(".nav-skils").mouseleave(function () {
+                $(".hr1").fadeOut(100);
+                $(".hr1").animate({ width: "0px" }, 300);
+            });
+
+
+            $(".nav-about").mouseenter(function () {
+                $(".hr2").css({ width: "0px" })
+                $(".hr2").fadeIn(1);
+                $(".hr2").animate({ width: "100%" }, 300);
+
+            });
+            $(".nav-about").mouseleave(function () {
+                $(".hr2").fadeOut(100);
+                $(".hr2").animate({ width: "0px" }, 300)
+            });
+
+
+            $(".nav-work").mouseenter(function () {
+                $(".hr3").css({ width: "0px" })
+                $(".hr3").fadeIn(1);
+                $(".hr3").animate({ width: "100%" }, 300);
+
+            });
+            $(".nav-work").mouseleave(function () {
+                $(".hr3").fadeOut(1);
+                $(".hr3").animate({ width: "0px" }, 300)
+            });
+
+
+            $(".nav-contact").mouseenter(function () {
+                $(".hr4").css({ width: "0px" })
+                $(".hr4").fadeIn(1);
+                $(".hr4").animate({ width: "100%" }, 300);
+
+            });
+            $(".nav-contact").mouseleave(function () {
+                $(".hr4").fadeOut(100);
+                $(".hr4").animate({ width: "0px" }, 300)
+            });
+            /*==================menue===================*/
+
+            $(".responsve,.close").hide()
+            $(".menu-icon").click(function () {
+                $(this).fadeToggle(1);
+                $(".close").fadeToggle(1);
+                $(".responsve").slideDown(500);
+
+            });
+            $(".close").click(function () {
+                $(this).fadeToggle(1);
+                $(".menu-icon").fadeToggle(1);
+                $(".responsve").slideUp(500);
+            });
+
+            /*=======================vald======================*/
+            $("#hid").hide();
+            $("#btn").click(function () {
+                if ($("#email").val() == "") {
+                    $("input,textarea,#btn").css({ filter: "blur(2px)" });
+                    $(".co #hid").css({ filter: "blur(0)" });
+                    $("#hid").fadeIn(500)
+
+
+                }
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <div class="main">
+        <!--=The-Contenr=-->
+
+        <!--======================Navigation==============================-->
+
+        <div class="nav" id="home">
+            <ul class="nav-ul">
+                <li class="nav-home"><a href="#home">home
+                        <hr class="hr"></a></li>
+                <li class="nav-skils"><a href="#skils">skils
+                        <hr class="hr1"></a></li>
+                <li class="nav-about"><a href="#about">about
+                        <hr class="hr2"></a></li>
+                <li class="nav-contact"><a href="#contact">contact
+                        <hr class="hr4"></a></li>
+            </ul>
+            <h1>profolio</h1>
+
+        </div>
+        <div class="menu">
+
+            <img src="css/img/menu.png" alt="" class="menu-icon">
+            <img src="css/img/close.png" alt="" class="close">
+        </div>
+        <div class="responsve">
+            <ul class="responsve-ul">
+                <li class="responsve-home"><a href="#home">home
+                        <hr class="hr"></a></li>
+                <li class="responsve-skils"><a href="#skils">skils
+                        <hr class="hr1"></a></li>
+                <li class="responsve-about"><a href="#about">about
+                        <hr class="hr2"></a></li>
+                <li class="responsve-contact"><a href="#contact">contact
+                        <hr class="hr4"></a></li>
+            </ul>
+
+        </div>
+        <!--======================Header==============================-->
+
+        <div class="header">
+            <h1 class="hello">heLLo , i'm ahmed abdalla</h1>
+
+            <p class="about-short">i'm a web devloper & graphc desiner .</p>
+            <a href="http://www.mediafire.com/file/1oq25azfjwpwup4/my-cv.pdf" target="_blank"><button><i
+                        class="fas fa-cloud-download-alt"></i> Download CV</button></a>
+        </div>
+
+        <!--======================Skils==============================-->
+
+        <div class="skils" id="skils">
+            <div class="serves">
+                <h1 class="skils-title">Skils</h1>
+                <div class="sav"
+                    style="width: 100%;background-color: honeydew;background-color: rgba(0, 0, blue, alpha)">
+
+
+                </div>
+                <div class="skils-info">
+                    <img src="css/img/web.png" alt="">
+                    <h2>Graphic Design</h2>
+                    <p class="about-short">
+                        I can edit photos, make logos, posters, business cards, and design book and magazine covers.
+                    </p>
+                </div>
+                <div class="skils-info">
+                    <img src="css/img/web-devlop.png" alt="">
+                    <h2>Web Development</h2>
+                    <p class="about-short">
+                        I can create a website from scratch or modify any pre-existing website, and I work as a backend
+                        and frontand and UI UX desinger.
+                    </p>
+                </div>
+                <div class="skils-info">
+                    <img src="css/img/and.png" alt="">
+                    <h2>Android APP</h2>
+                    <p class="about-short">
+                        Create applications or modify an existing application.
+                    </p>
+                </div>
+                <div class="skils-info">
+                    <img src="css/img/video.png" alt="">
+                    <h2>Video Editing</h2>
+                    <p class="about-short">
+                        Edit videos or create professional videos for ads or intro.
+                    </p>
+                </div>
+                <div class="skils-info">
+                    <img src="css/img/photo.png" alt="">
+                    <h2>Photographer</h2>
+                    <p class="about-short">
+                        I am good at photography, capturing special moments or product photography.
+                    </p>
+                </div>
+                <div class="skils-info">
+                    <img src="css/img/write.png" alt="">
+                    <h2>Writing content</h2>
+                    <p class="about-short">
+                        I can write any content with great professionalism or translate any text from English to Arabic
+                        or vice versa, or modify any text and formatting, in addition to changing the form of the text
+                        to any other formats.
+                    </p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <!--======================About==============================-->
+
+        <div class="about" id="about">
+            <h1>about me</h1>
+            <div class="img">
+                <img src="css/img/me.png" alt="">
+            </div>
+
+            <div class="me">
+                Hello, I am Ahmed, I am a web developer and designer, I have 6 years of experience in this field, I have
+                a degree in computer science from the College of Computer Science and Statistics at the University of
+                Kordofan, and I also work in graphic design, photo editing and making posters and logos in all
+                recognized programs On them, such as Photoshop, Illustrator XD, After Effects, and Premiere, and I also
+                work as Back & End and Front End developer and UIUX designer,
+            </div>
+
+        </div>
+
+
+        <!--======================contact==============================-->
+
+        <div class="contact" id="contact">
+            <h1>contact</h1>
+
+
+
+            <div class="co1">
+                <div class="si">
+                    <a href="#home">home</a>
+                    <a href="#skils">skils</a>
+                    <a href="#about">about me</a>
+                    <a href="#contact">contact</a>
+
+                </div>
+
+                <!---  <i class="fas fa-phone-alt">&nbsp; +96171065854</i><br>-->
+                <div class="soc">
+                    <ul class="so">
+                        <li><a href="https://www.facebook.com/wadbagadi999"><i class="fab fa-facebook-f"></i></a></li>
+                        <li><a href="https://www.instagram.com/wad.bagadi/"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://twitter.com/ahmedab64142463"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://api.whatsapp.com/send?phone=0096171065954"><i
+                                    class="fab fa-whatsapp"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="co">
+                <input type="email" name="" id="email" placeholder="E-mail">
+                <input type="number" name="" id="" placeholder="Phone Number"><br><br>
+                <textarea name="
+            " id="" cols="30" rows="10" placeholder="messeg"></textarea>
+                <button id="btn">send</button>
+                <div id="hid">
+                    <h1>some feild is impty !!!</h1>
+                    <button id="btn1">ok</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

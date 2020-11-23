@@ -1,0 +1,517 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-image: url(img/uii.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+/*======================Navigation==============================*/
+
+.nav {
+  width: 90%;
+  padding: 10px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.nav h1 {
+  color: white;
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  margin-top: 30px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 10px;
+  border-radius: 10px;
+}
+.nav-ul {
+  display: flex;
+  margin-top: 30px;
+}
+.nav-ul li {
+  font-weight: bold;
+  list-style: none;
+  margin: 0 10px;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.2em;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.nav-ul li:first-child a {
+  color: yellowgreen;
+}
+.nav-ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-home {
+}
+.nav-skils {
+}
+.nav-about {
+}
+.nav-work {
+}
+
+/*==========================responsve===========================*/
+
+.responsve {
+  width: 100%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100vw;
+  height: 50vh;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.responsve h1 {
+  color: white;
+  font-size: 3em;
+  align-self: center;
+  width: 100%;
+  border-bottom: 3px solid green;
+  text-align: center;
+  padding: 10px 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.responsve-ul {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: space-around;
+}
+.responsve-ul li {
+  list-style: none;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1em;
+}
+.responsve-ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+.menu {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-content: space-around;
+  padding: 30px 0px;
+  background-color: green;
+  display: none;
+}
+/*======================Header==================================*/
+
+.header {
+  width: 80%;
+  margin: auto;
+  margin-top: 100px;
+}
+.header button {
+  width: 900px;
+  height: 100px;
+  border-radius: 30px;
+  border: none;
+  margin: 50px 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  font-size: 2em;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  outline: none;
+  cursor: pointer;
+}
+.header h1 {
+  color: #fff;
+  font-size: 3em;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  text-transform: capitalize;
+}
+.header h1::first-letter {
+  color: greenyellow;
+  font-size: 4em;
+  text-transform: uppercase;
+  font-family: monospace;
+}
+.header p {
+  color: white;
+  font-size: 1.1em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+/*========================Sklils==============================*/
+
+.skils {
+  width: 100%;
+  margin: auto;
+  margin-top: 50px;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  overflow: hidden;
+}
+.serves {
+  padding: 30px;
+  margin: 20px 0px;
+  width: 95%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  background-color: indigo;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.serves .skils-info {
+  width: 500px;
+  text-align: center;
+  padding: 30px 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.serves .skils-info:hover {
+  background-color: green;
+  transition: 1s;
+}
+.serves .skils-info h2 {
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+.serves .skils-info p {
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+}
+.skils img {
+  filter: invert(1);
+  width: 80px;
+}
+.skils-title {
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  border-bottom: 2px solid green;
+  padding: 10px 0;
+}
+.skils-title::first-letter {
+  color: green;
+  font-size: larger;
+}
+
+/*======================about===================================*/
+
+.about {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 30px;
+  background-image: url(img/bc.jpg);
+}
+.about h1 {
+  width: 100%;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  border-bottom: 2px solid green;
+  padding: 10px;
+}
+.about h1::first-letter {
+  color: green;
+  font-size: larger;
+}
+.about img {
+  filter: contrast(100%);
+  width: 150px;
+  position: absolute;
+}
+.about .img {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+
+  filter: saturate(100%);
+}
+.me {
+  width: 600px;
+  background-color: rgba(76, 0, 130, 0.322);
+  margin-top: 145px;
+  padding: 65px;
+  color: white;
+  font-size: 1.3em;
+  text-align: justify;
+  font-weight: bold;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*======================contact=================================*/
+
+.contact {
+  margin: auto;
+  margin-top: 10px;
+  width: 95%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+.contact h1 {
+  width: 100%;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1.2em;
+}
+
+.contact .co {
+  width: 40%;
+  margin-top: 10px;
+  padding: 20px 0px;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+}
+.co input {
+  width: 100%;
+  height: 50px;
+  background-color: black;
+  border: none;
+  padding: 0 10px;
+  color: white;
+  font-size: 1.1em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  margin: 10px 0;
+}
+.co textarea {
+  width: 600px;
+  height: 200px;
+  background-color: black;
+  border: none;
+  padding: 10px 10px;
+  color: white;
+  font-size: 1.1em;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  width: 100%;
+}
+
+::placeholder {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.contact .line {
+  width: 2px;
+  background-color: green;
+  height: 200px;
+  margin-top: 20px;
+}
+.contact .co1 {
+  width: 40%;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: rgba(0, 0, 0, 0.7);
+  flex-grow: 1;
+}
+.co1 ul {
+  display: flex;
+}
+.co1 ul li a {
+  list-style: none;
+  margin: 0 20px;
+  color: white;
+  font-size: 1.5em;
+}
+.co1 i {
+  color: white;
+  width: 100%;
+  padding: 10px;
+  opacity: 0.8;
+}
+.contact .co1 .si {
+  width: 100%;
+  padding: 50px 100px;
+  flex-direction: column;
+  display: flex;
+  text-align: center;
+  margin: 10px 0px;
+}
+.contact .co1 .si a {
+  font-weight: bold;
+  margin: 10px 0px;
+  font-size: 1.3em;
+  color: white;
+  opacity: 0.8;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.contact .co1 .soc {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.contact button {
+  width: 100%;
+  margin: 5px 0;
+  height: 40px;
+  border: none;
+  background-color: green;
+  color: white;
+  font-size: 1.3em;
+  font-weight: bold;
+  cursor: pointer;
+  outline: none;
+}
+
+/*========================Media=================================*/
+
+@media only screen and (max-width: 768px) {
+  .header button {
+    width: 300px;
+    height: 60px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-size: 1.3em;
+    font-weight: bold;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    outline: none;
+    cursor: pointer;
+  }
+  .nav {
+    display: none;
+  }
+  .menu {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 5px;
+    width: 100%;
+  }
+  .about,
+  .serves,
+  .contact,
+  .skils {
+    width: 100%;
+    margin: 0;
+  }
+  .menu img {
+    width: 33px;
+  }
+  .contact .co {
+    width: 100%;
+  }
+  .contact .co1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    order: 1;
+  }
+  .co1 i {
+    color: white;
+    padding: 10px;
+    opacity: 0.8;
+  }
+  .contact .co1 .si {
+    width: 100%;
+    padding: 50px 100px;
+    flex-direction: column;
+    display: flex;
+    text-align: center;
+    margin: 10px 0px;
+  }
+  .contact .co1 .si a {
+    font-weight: bold;
+    margin: 10px 0px;
+    font-size: 1.3em;
+    color: white;
+    opacity: 0.8;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  }
+  .contact .co1 .soc {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0%;
+  }
+  .about .me {
+    padding: 65px 20px;
+    width: 100%;
+    font-size: 1em;
+  }
+  .headre {
+    width: 10vh;
+    width: 100%;
+    margin: 0;
+  }
+  .header button {
+    width: 100%;
+  }
+  .header h1 {
+    color: #fff;
+    font-size: 2em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+  }
+  .header h1::first-letter {
+    color: greenyellow;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-family: monospace;
+  }
+  .header p {
+    color: white;
+    font-size: 1em;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+  }
+  .skils-title,
+  .about h1 {
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+      Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    border-bottom: 2px solid green;
+    padding: 10px 0;
+    font-size: 1.5em;
+  }
+  .skils-title::first-letter {
+    color: green;
+    font-size: larger;
+  }
+}
